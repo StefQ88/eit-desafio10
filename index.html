@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cine</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" />
+        <nav>
+            <a href="#home">Inicio</a>
+            <a href="#add">Agregar Película</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="homeView">
+            <h1>Biblioteca de películas</h1>
+            <div class="search-filter">
+                <input id="searchTitle" type="text" placeholder="Buscar por título" />
+                <select id="yearFilter">
+                    <option value="">Año de estreno</option>
+                </select>
+            </div>
+            <div id="movieList" class="movie-list"></div>
+        </section>
+
+
+        <section id="addView" class="movie-form">
+            <h2>Agregar nueva película</h2>
+            <form id="addMovieForm">
+                <label for="title">Título</label>
+                <input type="text" id="title" placeholder="Ingresar título" required />
+
+                <label for="description">Descripción</label>
+                <textarea id="description" placeholder="Ingresar descripción" required></textarea>
+
+                <label for="year">Año de estreno</label>
+                <input id="year" type="number" placeholder="Ingresar año" required />
+
+                <button type="submit">Agregar película</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

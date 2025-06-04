@@ -1,0 +1,182 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-color: hsl(0, 0%, 9%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 65px;
+    border-bottom: 1px solid hsl(305, 54%, 43%);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    header nav a {
+        padding: 12px;
+        color: hsl(0, 1%, 83%);
+        font-size: 15px;
+    }
+
+    header img {
+        max-width: 55px;
+        border-radius: 50%;
+    }
+
+main {
+    min-height: 1180px;
+}
+
+    h1 {
+        font-family:sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 2rem;
+        color: hsl(305, 54%, 43%);
+    }
+
+    .search-filter {
+        width: 100%;
+        margin: 1rem auto;
+        
+    
+    }
+        #searchTitle {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid hsl(305, 54%, 43%);
+            border-radius: 8px;
+            font-size: 1rem;
+            background-color: hsl(0, 0%, 13%);
+            margin-bottom: 0;
+            color: hsl(0, 1%, 83%);
+        }
+
+        #yearFilter {
+            margin-top: 1rem;
+            padding: 0.4rem 1rem;
+            border: 1px solid hsl(305, 54%, 43%);
+            border-radius: 8px;
+            font-size: 1rem;
+            background-color: transparent;
+            color: hsl(0, 0%, 77%);
+        }
+
+    .movie-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        gap: 1rem;
+        margin-top: 2rem; 
+        margin-bottom: 2rem;
+    }
+
+    .movie-list p {
+        color: white;
+    }
+    
+    .movie-card {
+        background-color: hsl(0, 0%, 13%);
+        border-radius: 8px;
+    }
+
+    .movie-card h3 {
+        color: hsl(305, 54%, 43%);
+        margin-bottom: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .movie-card p {
+        margin-bottom: 0.5rem;
+        padding: 0.5rem 1rem;
+        color: hsl(0, 1%, 83%);
+    }
+
+
+    .movie-form {
+        padding: 1rem 1.5rem;
+        background-color: #1F1F1F;
+        border: 1px solid #1F1F1F;
+        border-radius: 10px;
+        max-width: 480px;
+        width: 100%;
+        font-family:Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+        
+
+    }
+        .movie-form h2 {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+        color: hsl(305, 52%, 38%);
+        }
+
+        .movie-form label {
+            display: block;
+            color: hsl(0, 0%, 47%);
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+
+        .movie-form input,
+        .movie-form textarea {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid hsl(305, 52%, 38%);
+            background-color: hsl(0, 0%, 9%);
+            margin-top: 2px;
+            margin-bottom: 0;
+            color: hsl(0, 1%, 83%);
+            font-size: 14px;
+        }
+
+        .movie-form textarea {
+            min-height: 100px;
+        }
+
+        .movie-form button {
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            padding: 0.4rem 1rem;
+            background-color: hsl(305, 54%, 43%);
+            border: 1px solid hsl(305, 52%, 38%);
+            color: hsl(0, 1%, 83%);
+            border-radius: 8px;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+
+        .movie-form button:hover {
+            background-color: hsl(305, 54%, 35%);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
